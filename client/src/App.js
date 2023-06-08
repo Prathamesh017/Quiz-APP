@@ -1,8 +1,4 @@
-import Homepage from "./Components/Homepage"
+import Homepage from './Components/Homepage'
 export default function App() {
-  return (
-    <>
-    <Homepage/>
-    </>
-  )
+  return <Homepage />
 }
