@@ -39,7 +39,7 @@ function QuizBox() {
     fetchData();
   }, []);
   const fetchData = async () => {
-    const quiz = await axios.get("http://localhost:3000/api/user/quiz", {
+    const quiz = await axios.get("https://quiz-app-pt.up.railway.app/api/user/quiz", {
       params: {
         difficulty: difficulty,
         category: category,

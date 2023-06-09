@@ -24,7 +24,7 @@ function SelectQuiz() {
   };
   const fetchAllQuizes = async () => {
     const quiz = await axios.get(
-      "http://localhost:3000/api/user/quiz/category"
+      "https://quiz-app-pt.up.railway.app/api/user/quiz/category"
     );
     setFetchQuizCategory(quiz.data.data);
   };
