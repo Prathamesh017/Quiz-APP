@@ -4,6 +4,7 @@ import { useNavigate } from "react-router";
 function QuizBox() {
   const category = JSON.parse(localStorage.getItem("category"));
   const difficulty = JSON.parse(localStorage.getItem("difficulty"));
+  const user = JSON.parse(localStorage.getItem("user"));
   //data fetched by backend
   const [quizData, setQuizData] = useState([]);
   //keeping tally of questions
@@ -211,7 +212,7 @@ function QuizBox() {
           ) : (
             <div className="bg-white p-4 flex flex-col gap-y-4 rounded-md shadow-lg mt-10">
               <h1 className="text-center text-xl text-slate-700">
-                Congratulations !!
+                Congratulations {user} !!
               </h1>
               <p className="text">Your Score is: {score}</p>
               <button

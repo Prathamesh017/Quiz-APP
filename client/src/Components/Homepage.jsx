@@ -3,7 +3,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import SelectQuiz from "./SelectQuiz";
 import QuizBox from "./QuizBox";
 import UserPage from "./UserPage";
-import ScoreBox from "./ScoreBox";
 
 function Homepage() {
   return (
@@ -19,7 +18,6 @@ function Homepage() {
           <Route path="/" exact element={<SelectQuiz />} />
           <Route path="user" element={<UserPage />} />
           <Route path="user/quiz" element={<QuizBox />} />
-          <Route path="user/quiz/score" element={<ScoreBox></ScoreBox>} />
         </Routes>
       </BrowserRouter>
     </div>
